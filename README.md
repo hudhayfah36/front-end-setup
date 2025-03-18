@@ -1,4 +1,4 @@
-# Setting Up a React.js Project Using Vite (Windows) for Students
+# Setting Up a React.js Project Using Vite (Windows)
 
 ## 1. Install Node.js
 

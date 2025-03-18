@@ -1,58 +1,40 @@
-# Setting Up Next.js and React.js Projects Using Vite
+# Setting Up a React.js Project Using Vite (Windows) for Students
 
 ## 1. Install Node.js
 
-Before starting, ensure you have **Node.js** installed.
+Before starting, you need to install **Node.js**.
 
-- **Windows**: Download and install from [Node.js official website](https://nodejs.org/).
-- **Linux**:
-  ```sh
-  sudo apt update && sudo apt install nodejs npm -y
-  ```
-  To check the installed version:
+- **Download and install** from [Node.js official website](https://nodejs.org/).
+- To check if Node.js is installed, open **Command Prompt (cmd)** and run:
   ```sh
   node -v
   ```
 
 ---
 
-## 2. Initialize a Vite Project
+## 2. Create a React.js Project Using Vite
 
-### For React.js
+1. Open **Command Prompt (cmd)** and run:
+   ```sh
+   npm create vite@latest my-react-app --template react
+   ```
+   Replace `my-react-app` with your project name.
 
-Run the following commands:
+2. Move into the project folder:
+   ```sh
+   cd my-react-app
+   ```
 
-```sh
-# Create a React project
-npm create vite@latest my-react-app --template react
-
-# Move into the project folder
-cd my-react-app
-
-# Install dependencies
-npm install
-```
-
-### For Next.js
-
-Run:
-
-```sh
-# Create a Next.js project
-npm create vite@latest my-next-app --template nextjs
-
-# Move into the project folder
-cd my-next-app
-
-# Install dependencies
-npm install
-```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
 ---
 
 ## 3. Install Tailwind CSS
 
-Inside the project directory, run:
+Inside the project folder (`my-react-app`), run:
 
 ```sh
 npm install -D tailwindcss postcss autoprefixer
@@ -79,7 +61,7 @@ export default {
 
 ### Add Tailwind to CSS
 
-In `src/index.css` (React) or `src/globals.css` (Next.js), add:
+Open `src/index.css` and add:
 
 ```css
 @tailwind base;
@@ -91,50 +73,29 @@ In `src/index.css` (React) or `src/globals.css` (Next.js), add:
 
 ## 4. Run the Project
 
-To start the development server, use:
+To start the development server, run:
 
 ```sh
 npm run dev
 ```
 
-- Open [http://localhost:5173](http://localhost:5173) for React.
-- Open [http://localhost:3000](http://localhost:3000) for Next.js.
+- Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 5. Project Structure and File Placement
+## 5. Project Structure (Where to Place Components)
 
-### React.js
-- **Components** go inside `src/components/`.
-- **Pages** are usually inside `src/pages/`.
+- **Components** go inside the `src/components/` folder.
 - Example structure:
   ```
   src/
   ├── components/
   │   ├── Header.jsx
   │   ├── Footer.jsx
-  ├── pages/
-  │   ├── Home.jsx
-  │   ├── About.jsx
-  │
   ├── App.jsx  # Main component
   ├── main.jsx  # Entry point
   ```
 
-### Next.js
-- **Pages** go inside the `pages/` directory (automatically routes URLs).
-- **Components** should be inside `components/`.
-- Example structure:
-  ```
-  src/
-  ├── components/
-  │   ├── Navbar.jsx
-  │   ├── Footer.jsx
-  ├── pages/
-  │   ├── index.jsx  # Home page
-  │   ├── about.jsx  # About page
-  ```
-
 ---
 
-## 🎉 You're Ready to Start Building!
+## 🎉 You Are Ready to Start Coding!
